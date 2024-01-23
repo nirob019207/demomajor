@@ -1,8 +1,8 @@
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import SpeachesCard from './SpeachesCard';
-
+import Slider from "react-slick";
 
 const info = [
     {
@@ -97,13 +97,15 @@ function SpeecheContainer() {
       // Navigate to the details page with the selected speech data
       navigate(`/speeches/${sl}`);
     };
-  
+    
+ 
     return (
       <div className='bg-majorbg py-16'>
         <div className=' '>
         <h1 class="text-white text-5xl font-normal font-['URWImperialW01-Regular'] leading-[58px] text-center">Various Speeches</h1>
         </div>
-        <div className="flex flex-wrap justify-center gap-16 mt-8 p-16 text-justify">
+      
+       <div className="flex flex-wrap justify-center gap-16 mt-8 p-16 text-justify">
           {info.map((inf) => (
             <SpeachesCard
               key={inf.sl}
@@ -114,6 +116,7 @@ function SpeecheContainer() {
             />
           ))}
         </div>
+      
   
         
       
