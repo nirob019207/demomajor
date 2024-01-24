@@ -36,13 +36,13 @@ const HomesliderCard = () => {
       {/* home text start*/}
        <div className="justify-center items-center flex flex-1" >
         <div>
-          <span className="text-white text-[32px] font-normal font-['URWImperialW01-Regular'] uppercase leading-[42px]">Welcome Biography Of Major </span>
+          <span className="text-white 2xl:text-[28px] xl:text:[20px] lg:text:[20px] font-normal font-['URWImperialW01-Regular'] uppercase lg:leading-[42px]">Welcome Biography Of Major </span>
           <div className="">
-            <span className="text-white text-9xl font-normal font-['URWImperialW01-Regular'] capitalize leading-[140px]">{info.title1}</span>
+            <span className="text-white 2xl:text-7xl xl:text-7xl  lg:text-6xl text-5xl font-normal font-['URWImperialW01-Regular'] capitalize lg:leading-[120px]">{info.title1}</span>
 
             <div className="flex items-center gap-4 ">
-              <span className="text-white text-9xl font-normal font-['URWImperialW01-Regular'] capitalize leading-[140px]">{info.title2} </span>
-             <div className="mt-10">
+              <span className="text-white  2xl:text-7xl xl:text-7xl  lg:text-6xl text-5xl font-normal font-['URWImperialW01-Regular'] capitalize lg:leading-[120px]">{info.title2} </span>
+             <div className="lg:mt-8 mt-6">
              <button className="flex items-center justify-center text-white  border border-gray-800 hover:bg-white focus:ring-4 focus:outline-none focus:ring-purple-300 rounded-full font-medium  text-sm px-5 py-2.5 text-center hover:text-black me-2 mb-2  dark:hover:text-black dark:hover:bg-white dark:focus:ring-white">
                 <FaStar className="mx-1" size={15} />
                 <FaStar className="mx-1" size={15} />
@@ -53,7 +53,7 @@ const HomesliderCard = () => {
             </div>
           </div>
           <div className="flex justify-end">
-          <span className="text-white text-[26px] font-medium font-['Inter'] uppercase leading-[120px]">Major Abdul Ghani</span>
+          <span className="text-white lg:text-[26px] text-[16px] font-medium font-['Inter'] uppercase leading-[120px]">Major Abdul Ghani</span>
 
           </div>
         </div>
@@ -61,12 +61,12 @@ const HomesliderCard = () => {
       {/* home text end*/}
         
       {/* home image start */}
-       <div className="ml-auto">
-        <img src={info.image} className="h-[735px] w-[737px]" alt="" />
+       <div className="ml-auto lg:block hidden">
+        <img src={info.image} className="h-[705px] 2xl:w-[607px] xl:w-[500px] w-[500px]" alt="" />
       </div> 
           
     </div>
-    <div className="flex justify-center">
+    <div className="flex justify-center py-4">
       {slider.map((current,currentState)=>(
         <samp key={currentState} className='h-4 w-4 p-2 rounded-full mx-2 cursor-pointer bg-gray-200' onClick={()=>gotoNext(currentState)}></samp>
       ))}

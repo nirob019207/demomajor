@@ -2,6 +2,7 @@ import React from 'react'
 import homeimg from '../../assets/image/home.png'
 import arcitect from '../../assets/image/articitect.png'
 import political from '../../assets/image/political.png'
+import { Link } from 'react-router-dom'
 const HomeCard = () => {
 
     const info =[
@@ -9,20 +10,26 @@ const HomeCard = () => {
             title: "Birth of a Warrior",
             name: homeimg,
             sl: 1,
+            linkto:"birth",
             desc: " It was Sunday 1st December 1919, early morning that a Ghani, founder of the East Bengal Regiment in the village of Nagaish. ",
           },
           {
-            title: "Architect of Nation Building ",
-            name: arcitect,
-            sl: 2,
-            desc: " Major A Ghani was a multi-dimensional leader and a statesman who did not give in to pressure as he was above party.",
-          },
-          {
             title: "The Founder of the East Bengal Regiment ",
-            name: political,
-            sl: 3,
+            name: arcitect,
+            
+            linkto:"east",
+            sl: 2,
             desc: "When the dark shadows of World War 2 were looming over the Indian Subcontinent Major Ghani was serving in the.",
           },
+          {
+            title: "Architect of Nation Building ",
+            name: political,
+            linkto:"political",
+            sl: 3,
+          
+            desc: " Major A Ghani was a multi-dimensional leader and a statesman who did not give in to pressure as he was above party.",
+          },
+         
     ]
   return (
     <>
@@ -45,9 +52,9 @@ const HomeCard = () => {
   </div>
   <div class=" p-6">
    <div className={info.sl===2 ?'w-[149px] h-11 px-[33px] bg-zinc-900 py-4 rounded-[100px] border border-zinc-900 justify-center items-center gap-2.5 inline-flex':'w-[149px] h-11 px-[33px]  py-4 rounded-[100px] border border-zinc-900 justify-center items-center gap-2.5 inline-flex'}>
-   <button className={info.sl === 2 ? 'text-white text-base font-medium font-[\'Inter\'] leading-relaxed' : 'text-zinc-900 text-base font-medium font-[\'Inter\'] leading-relaxed'}>
+   <Link to={info.linkto} className={info.sl === 2 ? 'text-white text-base font-medium font-[\'Inter\'] leading-relaxed' : 'text-zinc-900 text-base font-medium font-[\'Inter\'] leading-relaxed'}>
   Read More
-</button>
+</Link>
    </div>
   </div>
 </div> 

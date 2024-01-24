@@ -10,6 +10,7 @@ module.exports = {
       },
       colors: {
         majorbg: '#1C1C1C',
+        contact:'#F6F6F6',
       },
     },
   },

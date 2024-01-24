@@ -3,12 +3,16 @@ import HomesliderCard from './HomesliderCard'
 import HomeCard from './HomeCard'
 import SpeecheContainer from '../Speeches/SpeecheContainter'
 
+
 const Home = () => {
   return (
     <div>
-     <HomesliderCard/>
+<div className=''>
+<HomesliderCard/>
+</div>
      <HomeCard/>
      <SpeecheContainer/>
+
     </div>
   )
 }

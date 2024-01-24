@@ -1,0 +1,53 @@
+// Sidebar.js
+import React from "react";
+import { Link } from "react-router-dom";
+
+const Sidebar = ({ isOpen, onClose }) => {
+  return (
+    <div className={`fixed top-0 right-0 h-screen w-1/2 bg-white text-black z-10 p-6 transform ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      <button
+        className="absolute top-4 right-4 text-lg cursor-pointer focus:outline-none"
+        onClick={onClose}
+      >
+        &#x2716; {/* Unicode character for a cross mark */}
+      </button>
+
+      <div className="flex justify-start items-center py-8">
+
+        <span className="bg-gray-700 text-white font-['URWImperialW01-Regular'] capitalize shadow-sm p-3">
+            Major<br></br> A Ghani
+        </span>
+
+      </div>
+      <ul className="flex flex-col gap-4 font-['URWImperialW01-Regular'] capitalize">
+        <li>
+          <Link to="/" onClick={onClose}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="/allspeeach" onClick={onClose}>
+            Various Speeches
+          </Link>
+        </li>
+        <li>
+          <Link to="/photo" onClick={onClose}>
+            Photo
+          </Link>
+        </li>
+        <li>
+          <Link to="/" onClick={onClose}>
+            Timeline
+          </Link>
+        </li>
+        <li>
+          <Link to="/" onClick={onClose}>
+            Contact
+          </Link>
+        </li>
+      </ul>
+    </div>
+  );
+};
+
+export default Sidebar;

@@ -1,5 +1,5 @@
 import img1 from './../../assets/image/homemajor.png'
-import img2 from '../../assets/image/hometop.png' 
+import img2 from '../../assets/image/20.jpg' 
 import img3 from '../../assets/image/1.jpg' 
 const slider = [
     {
