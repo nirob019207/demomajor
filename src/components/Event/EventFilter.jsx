@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { AiOutlineClose } from 'react-icons/ai';
 
-const PhotoFilter = ({ filterItem }) => {
+
+const EventFilter = ({ filterItem }) => {
   const [activeFilter, setActiveFilter] = useState("all");
   const [showDropdown, setShowDropdown] = useState(false);
 
@@ -26,14 +26,14 @@ const PhotoFilter = ({ filterItem }) => {
             All
           </button>
         </li>
-        <li className={`bg-${activeFilter === "major" ? "majorbg text-white" : "gray-200"} shadow-md text-black  px-7 py-1.5 outline-gray-700 border rounded`}>
-          <button onClick={() => handleFilterClick("major")}>
-            Major
+        <li className={`bg-${activeFilter === "photo" ? "majorbg text-white" : "gray-200"} shadow-md text-black  px-7 py-1.5 outline-gray-700 border rounded`}>
+          <button onClick={() => handleFilterClick("photo")}>
+           Photos
           </button>
         </li>
-        <li className={`bg-${activeFilter === "anchor" ? "majorbg text-white" : "gray-200"} shadow-md text-black  px-7 py-1.5 outline-gray-700 border rounded`}>
-          <button onClick={() => handleFilterClick("anchor")}>
-            Anchor
+        <li className={`bg-${activeFilter === "video" ? "majorbg text-white" : "gray-200"} shadow-md text-black  px-7 py-1.5 outline-gray-700 border rounded`}>
+          <button onClick={() => handleFilterClick("video")}>
+          Video
           </button>
         </li>
       </ul>
@@ -53,8 +53,8 @@ const PhotoFilter = ({ filterItem }) => {
           <div className="relative  right-0 bg-white shadow-md mt-2">
             <ul className="flex flex-col gap-2 p-2 text-2xl">
               <li className={`text-center cursor-pointer shadow-md text-black  py-1.5 outline-gray-700 border rounded ${activeFilter === "all" && "text-majorbg"}`} onClick={() => handleFilterClick("all")}>All</li>
-              <li className={`text-center cursor-pointer shadow-md text-black py-1.5 outline-gray-700 border rounded ${activeFilter === "major" && "text-majorbg"}`} onClick={() => handleFilterClick("major")}>Major</li>
-              <li className={`text-center cursor-pointer shadow-md text-black   py-1.5 outline-gray-700 border rounded ${activeFilter === "anchor" && "text-majorbg"}`} onClick={() => handleFilterClick("anchor")}>Anchor</li>
+              <li className={`text-center cursor-pointer shadow-md text-black py-1.5 outline-gray-700 border rounded ${activeFilter === "photo" && "text-majorbg"}`} onClick={() => handleFilterClick("photo")}>Photos</li>
+              <li className={`text-center cursor-pointer shadow-md text-black   py-1.5 outline-gray-700 border rounded ${activeFilter === "video" && "text-majorbg"}`} onClick={() => handleFilterClick("video")}>Video</li>
             </ul>
           </div>
         )}
@@ -64,4 +64,4 @@ const PhotoFilter = ({ filterItem }) => {
   );
 };
 
-export default PhotoFilter;
+export default EventFilter;

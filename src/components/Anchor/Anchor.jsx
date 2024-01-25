@@ -4,12 +4,12 @@ import political from '../../assets/image/3.jpg';
 const Anchor = () => {
   return (
     <div className="py-[70px]">
-         <div class="w-full h-px bg-zinc-800"></div>
+         <div className="w-full h-px bg-zinc-800"></div>
      <div className='py-12 bg-majorbg'>
     
 
 
-     <h1 class="text-center text-white text-[40px] font-normal font-['URWImperialW01-Regular'] capitalize leading-[50px]">Anchor: The Wife</h1>
+     <h1 className="text-center text-white text-[40px] font-normal font-['URWImperialW01-Regular'] capitalize leading-[50px]">Anchor: The Wife</h1>
 
     </div>   
 

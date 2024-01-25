@@ -1,8 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import SpeachesCard from './SpeachesCard';
-import Slider from "react-slick";
+
 import AllSpeechCard from './AllSpeechCard';
 
 const info = [

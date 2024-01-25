@@ -14,34 +14,39 @@ const Sidebar = ({ isOpen, onClose }) => {
 
       <div className="flex justify-start items-center py-8">
 
-        <span className="bg-gray-700 text-white font-['URWImperialW01-Regular'] capitalize shadow-sm p-3">
+        <span className="bg-gray-700  text-white font-['URWImperialW01-Regular'] capitalize shadow-sm p-3">
             Major<br></br> A Ghani
         </span>
 
       </div>
-      <ul className="flex flex-col gap-4 font-['URWImperialW01-Regular'] capitalize">
+      <ul className="flex flex-col gap-4 font-['URWImperialW01-Regular'] capitalize divide-y">
+      <li>
+              <Link to="/" onClick={onClose}>Home</Link>
+            </li>
+            <li>
+              <Link to="/legachy"  onClick={onClose}>Legacies</Link>
+            </li>
+            <li>
+              <Link to="/slider"  onClick={onClose}>Military Career</Link>
+            </li>
+            <li>
+              <Link to="/anchor"  onClick={onClose}>Anchor</Link>
+            </li>
+            <li>
+              <Link to="/timeline"  onClick={onClose}>Timeline</Link>
+            </li>
+            <li>
+              <Link to="/allspeeach"  onClick={onClose}>Various Speeches</Link>
+            </li>
+            <li>
+              <Link to="/photo"  onClick={onClose}>Photo</Link>
+            </li>
+            <li>
+              <Link to="/event"  onClick={onClose}>Event</Link>
+            </li>
+           
         <li>
-          <Link to="/" onClick={onClose}>
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link to="/allspeeach" onClick={onClose}>
-            Various Speeches
-          </Link>
-        </li>
-        <li>
-          <Link to="/photo" onClick={onClose}>
-            Photo
-          </Link>
-        </li>
-        <li>
-          <Link to="/" onClick={onClose}>
-            Timeline
-          </Link>
-        </li>
-        <li>
-          <Link to="/" onClick={onClose}>
+          <Link to="/contact" onClick={onClose}>
             Contact
           </Link>
         </li>

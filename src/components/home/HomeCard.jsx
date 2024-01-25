@@ -37,13 +37,13 @@ const HomeCard = () => {
     {
         info.map((info)=>(
             <div key={info.sl}
-  class="relative flex md:max-w-[28rem] max-w-[22rem] flex-col overflow-hidden  bg-white bg-clip-border border border-black shadow">
+  class="relative flex md:max-w-[28rem] max-w-[22rem] rounded-md flex-col overflow-hidden  bg-white bg-clip-border border border-black shadow">
   <div class="relative m-0 overflow-hidden  bg-transparent rounded-none shadow-none bg-clip-border p-2">
     <img
       src={info.name} alt='' />
   </div>
   <div class="p-6 ">
-    <h4 class="text-zinc-900 min-h-[110px] text-[40px] font-normal font-['URWImperialW01-Regular']  capitalize leading-[46px]   block  text-2xl antialiased   tracking-normal text-blue-gray-900">
+    <h4 class="text-zinc-900 min-h-[110px] lg:text-[40px] tex font-normal font-['URWImperialW01-Regular']  capitalize leading-[46px]   block  text-2xl antialiased   tracking-normal text-blue-gray-900">
       {info.title}
     </h4>
     <p class="block mt-3 font-sans text-xl antialiased font-normal text-justify leading-relaxed text-gray-700">
@@ -51,8 +51,8 @@ const HomeCard = () => {
     </p>
   </div>
   <div class=" p-6">
-   <div className={info.sl===2 ?'w-[149px] h-11 px-[33px] bg-zinc-900 py-4 rounded-[100px] border border-zinc-900 justify-center items-center gap-2.5 inline-flex':'w-[149px] h-11 px-[33px]  py-4 rounded-[100px] border border-zinc-900 justify-center items-center gap-2.5 inline-flex'}>
-   <Link to={info.linkto} className={info.sl === 2 ? 'text-white text-base font-medium font-[\'Inter\'] leading-relaxed' : 'text-zinc-900 text-base font-medium font-[\'Inter\'] leading-relaxed'}>
+   <div className={info.sl===2 ?'w-[149px] h-11 px-[33px] hover:text-black hover:bg-white  bg-zinc-900 py-4 rounded-[100px] border border-zinc-900 justify-center items-center text-white gap-2.5 inline-flex':'w-[149px] h-11 px-[33px] text-black hover:bg-black hover:text-white py-4 rounded-[100px] border border-zinc-900 justify-center items-center gap-2.5 inline-flex'}>
+   <Link to={info.linkto} >
   Read More
 </Link>
    </div>

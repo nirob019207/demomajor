@@ -10,7 +10,8 @@ const SingleTimeline = ({ title, image, desc, index }) => {
       </div>
       <div className={`lg:w-[45%] w-full ${isOdd ? 'lg:order-1' : ''}`}>
         <div className="p-4 bg-white rounded-lg shadow-md">
-          <h2 className="text-2xl font-semibold mb-4">{title}</h2>
+        <div class="text-zinc-900 lg:text-[64px] text-2xl font-normal font-['URWImperialW01-Regular'] underline capitalize leading-[140px]">{title}</div>
+
           <p className="text-gray-700" dangerouslySetInnerHTML={{ __html: desc }} />
         </div>
       </div>
