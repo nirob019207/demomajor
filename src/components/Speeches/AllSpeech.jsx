@@ -101,7 +101,7 @@ function AllSpeech() {
     
  
     return (
-        <div className=''>
+      <div className="py-[70px]">
         <div class="w-full h-px bg-zinc-800"></div>
     <div className='py-12 bg-majorbg'>
    

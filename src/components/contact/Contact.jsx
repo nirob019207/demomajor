@@ -1,96 +1,63 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { FaPhone } from "react-icons/fa";
+import map from "../../assets/image/map.png";
 
 const Contact = () => {
   return (
- <div>
-       <div className="py-16  bg-contact">
-      <div className="flex justify-center items-center flex-wrap gap-32">
-        <div>
-          <p class="text-zinc-900 text-2xl font-normal font-['URWImperialW01-Regular'] leading-[58px]">
-            Major Abdul Ghani Foundation
-          </p>
-          <p class="text-zinc-800 text-base font-normal font-['Inter'] leading-normal">
-            01727850240, 01711524584
-          </p>
-          <p class="text-zinc-800 text-base font-normal font-['Inter'] leading-normal">
-            004407534761341 (WhatsApp)
-          </p>
-          <p class="text-zinc-800 text-base font-normal font-['Inter'] leading-normal">
-            20 Seacole Close, Blackblurl, Lancashire,
-            <br />
-            BB1 2RA, UK
-          </p>
-        </div>
-
-        <div>
-          <div className="w-[285px] h-[210px] relative">
-            <div className="left-0 top-0 absolute text-zinc-900 text-2xl font-normal font-['URWImperialW01-Regular'] leading-[34px]">
-              Important Links
-            </div>
-            <Link
-              to="/"
-              className="left-0 top-[54px] absolute text-zinc-800 text-base font-normal font-['Inter'] leading-normal"
-            >
-              Home
-            </Link>
-            <Link
-              to="/timeline"
-              className="left-0 top-[90px] absolute text-zinc-800 text-base font-normal font-['Inter'] leading-normal"
-            >
-              Timeline
-            </Link>
-            <Link
-              to="/speeches"
-              className="left-0 top-[126px] absolute text-zinc-800 text-base font-normal font-['Inter'] leading-normal"
-            >
-              Speeches
-            </Link>
-
-            <Link
-              to="/recognition"
-              className="left-0 top-[162px] absolute text-zinc-800 text-base font-normal font-['Inter'] leading-normal"
-            >
-              Recognition
-            </Link>
-            <Link
-              to="/photo-archives"
-              className="left-0 top-[198px] absolute text-zinc-800 text-base font-normal font-['Inter'] leading-normal"
-            >
-              Photo Archives
-            </Link>
-          </div>
-        </div>
-
-        <div>
-          <div class="w-[330px] h-[222px] relative">
-            <div class="left-0 top-[54px] absolute text-zinc-800 text-base font-normal font-['Inter'] leading-normal">
-              Email*
-            </div>
-            <div class="w-[330px] h-14 left-0 top-[90px] absolute">
-              <div class="left-[20px] top-[22px] absolute text-zinc-500 text-[15px] font-normal font-['Inter'] leading-normal">
-                Enter you mail
-              </div>
-              <input
-                class="w-[330px] h-14 left-0 top-0 absolute border border-zinc-900"
-                type="text"
-              />
-            </div>
-            <div class="w-[140px] h-14 px-[43px] py-[22px] left-0 top-[166px] absolute bg-zinc-900 justify-center items-center gap-2.5 inline-flex">
-              <button class="text-white text-base font-medium font-['Inter'] leading-normal">
-                Submit
-              </button>
-            </div>
-            <div class="left-0 top-0 absolute text-zinc-900 text-2xl font-normal font-['URWImperialW01-Regular'] leading-[34px]">
-              Send Mail
-            </div>
-          </div>
-        </div>
-      </div>
+    <div className="py-[70px]">
+      <div className="w-full h-px bg-zinc-800"></div>
+    <div className="py-12 bg-majorbg">
+      <h1 className="text-center text-white text-[40px] font-normal font-['URWImperialW01-Regular'] capitalize leading-[50px]">Contact</h1>
     </div>
-            <div class="py-4 text-zinc-800 text-center text-[15px] font-medium font-['Inter'] capitalize leading-normal">copyright major ghani foundation</div>
 
- </div>
+
+
+    <div className="grid grid-cols-12 lg:grid-cols-12 gap-4 py-16">
+
+
+
+
+
+<div className="lg:col-span-8 col-span-12 p-4 flex justify-center border border-gray-400 m-3 items-center">
+  <div className="flex gap-4 flex-wrap "> 
+    <img src={map} className="lg:w-[350px] w-full mx-auto" alt="" />
+    <div className="lg:w-[305px] h-[360px] w-full mx-auto border border-gray-400 bg-zinc-100">
+      {/* Content inside the centered div */}
+      <div className="flex justify-center items-center py-16">
+      <FaPhone/>
+      </div>
+      <div class="text-center text-zinc-800 text-xl font-normal font-['URWImperialW01-Regular'] leading-normal">01727850240, 01711524584</div>
+      <div class="text-center text-zinc-800 text-xl font-normal font-['URWImperialW01-Regular'] leading-normal">004407534761341 (WhatsApp)</div>
+    </div>
+  </div>
+</div>
+<div className="lg:col-span-4 col-span-12 border border-gray-900 m-3 p-4">
+  <div>
+  <div class="text-zinc-900 text-[32px] font-normal font-['URWImperialW01-Regular'] capitalize leading-[140px]">fillup the form</div>
+    <div className="py-3 ">
+      <input type="text" className="py-1 px-3 w-full bg-white shadow border border-zinc-900" placeholder="Enter your name" />
+    </div>
+    <div className="py-3">
+      <input type="text" className="py-1 px-3 w-full bg-white shadow border border-zinc-900" placeholder="Enter your Email" />
+    </div>
+    <div className="py-3">
+      <input type="text" className="py-1 px-3 w-full bg-white shadow border border-zinc-900" placeholder="Enter your phone" />
+    </div>
+    <div>
+      <textarea name="" id="" className="py-1 px-3 w-full bg-white shadow border border-zinc-900" cols="20" rows="6" placeholder=" Enter your message"> </textarea>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+    </div>
+
+   
   );
 };
 

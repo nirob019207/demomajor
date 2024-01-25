@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const TimelineFilter = ({ filterItem }) => {
+const LegachyFilter = ({ filterItem }) => {
   const [activeFilter, setActiveFilter] = useState("all");
 
   const handleFilterClick = (filterType) => {
@@ -20,21 +20,14 @@ const TimelineFilter = ({ filterItem }) => {
           <button>All</button>
         </li>
         <li
-          onClick={() => handleFilterClick("born")}
+          onClick={() => handleFilterClick("warrior")}
           className={`bg-${
-            activeFilter === "born" ? "majorbg text-white" : "gray-200"
+            activeFilter === "warrior" ? "majorbg text-white" : "gray-200"
           } shadow-md text-black  px-7  py-1.5 outline-gray-700 border rounded`}
         >
-          <button>Early Life</button>
+          <button>Warrior</button>
         </li>
-        <li
-          onClick={() => handleFilterClick("education")}
-          className={`bg-${
-            activeFilter === "education" ? "majorbg text-white" : "gray-200"
-          } shadow-md text-black  px-7  py-1.5 outline-gray-700 border rounded`}
-        >
-          <button>Education</button>
-        </li>
+       
         <li
           onClick={() => handleFilterClick("east")}
           className={`bg-${
@@ -44,24 +37,17 @@ const TimelineFilter = ({ filterItem }) => {
           <button>East Bengle Regiment</button>
         </li>
         <li
-          onClick={() => handleFilterClick("politcal")}
+          onClick={() => handleFilterClick("political")}
           className={`bg-${
-            activeFilter === "politcal" ? "majorbg text-white" : "gray-200"
+            activeFilter === "political" ? "majorbg text-white" : "gray-200"
           } shadow-md text-black px-7  py-1.5 outline-gray-700 border rounded`}
         >
           <button>Political Carrer</button>
         </li>
-        <li
-          onClick={() => handleFilterClick("death")}
-          className={`bg-${
-            activeFilter === "death" ? "majorbg text-white" : "gray-200"
-          } shadow-md text-black px-7  py-1.5 outline-gray-700 border rounded`}
-        >
-          <button>Death</button>
-        </li>
+        
       </ul>
     </div>
   );
 };
 
-export default TimelineFilter;
+export default LegachyFilter;

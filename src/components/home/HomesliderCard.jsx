@@ -23,20 +23,13 @@ const HomesliderCard = () => {
    <div className="bg-majorbg py-4">
      <div className="pl-1 text-white flex items-center w-full h-[735px] relative">
       {/* social icon start */}
-      <div className="absolute bottom-10 left-8">
-        <span className="text-white text-base font-medium font-['Inter'] uppercase leading-relaxed">Follow</span>
-        <div className="flex items-center gap-4 pt-2">
-          <FaFacebook size={15} />
-          <FaWikipediaW size={15} />
-          <FaYoutube size={15} />
-        </div>
-      </div>
+     
       {/* social icon end */}
 
       {/* home text start*/}
        <div className="justify-center items-center flex flex-1" >
         <div>
-          <span className="text-white 2xl:text-[28px] xl:text:[20px] lg:text:[20px] font-normal font-['URWImperialW01-Regular'] uppercase lg:leading-[42px]">Welcome Biography Of Major </span>
+
           <div className="">
             <span className="text-white 2xl:text-7xl xl:text-7xl  lg:text-6xl text-5xl font-normal font-['URWImperialW01-Regular'] capitalize lg:leading-[120px]">{info.title1}</span>
 

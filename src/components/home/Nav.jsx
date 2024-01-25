@@ -13,7 +13,7 @@ const Nav = () => {
   };
 
   return (
-    <div className="bg-majorbg text-white w-full lg:px-16 px-3 py-3">
+    <div className="bg-majorbg text-white w-full lg:px-10 px-3 fixed shadow-sm py-3 z-10">
       <div className="flex justify-between">
         <div className=" uppercase font-sans">
           <p>Major.A</p>
@@ -24,9 +24,21 @@ const Nav = () => {
         </div>
 
         <div className="lg:block hidden">
-          <ul className="flex justify-center items-center py-3 gap-10">
+          <ul className="flex justify-center items-center py-3 gap-4">
             <li>
               <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/legachy">Legacies</Link>
+            </li>
+            <li>
+              <Link to="/slider">Military Career</Link>
+            </li>
+            <li>
+              <Link to="/anchor">Anchor</Link>
+            </li>
+            <li>
+              <Link to="/timeline">Timeline</Link>
             </li>
             <li>
               <Link to="/allspeeach">Various Speeches</Link>
@@ -35,10 +47,11 @@ const Nav = () => {
               <Link to="/photo">Photo</Link>
             </li>
             <li>
-              <Link to="/timeline">Timeline</Link>
+              <Link to="/photo">Event</Link>
             </li>
+           
             <li>
-              <Link to="/">Contact</Link>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
@@ -56,9 +69,11 @@ const Nav = () => {
           <AiOutlineMenu size={30} color="#fff" onClick={toggleSidebar} />
         </div>
       </div>
+    
 
       {/* Sidebar */}
       <Sidebar isOpen={isSidebarOpen} onClose={toggleSidebar} />
+      <div className="w-full h-px bg-zinc-800 my-1"></div>
     </div>
   );
 };

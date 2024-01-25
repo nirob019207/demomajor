@@ -8,14 +8,14 @@ import image5 from '../../assets/image/59.jpg'
 const timelineDetails =[
     {
         sl:1,
-        title:'born',
+        title:'Early life',
         image:image1,
         type:"born",
         desc:"It was Sunday 1st December 1919, early morning that A Ghani, founder of a the East Bengal Regiment in the village of Nagaish, under Brmanpara Upazila in Comilla district saw the first ray of light and wailed loudly to announce his arrival. He was strong and survived the harsh conditions of those period and painfully lost his loving mother when he was two and a half years of age.<br> It broke the heart of his father and did not agree with the idea of remarriage. However, seeing the condition of Ghani growing without the care of a mother he with the pressure of his relative remarried. Although he was his father’s only son, loved one but he was more attached to his uncle’s family just close by. Most of his uncles were y of his age and they filled his life.<br> They were well established as landlords and had considerable chunk of landed property. There are many anecdotes of his childhood, but I would rather leave it here to do justice to the limited space. The picture of the bungalow was not there when he was born. It was erected in 1946 after the WW 2 when he returned home with the arrears of his salary and bought it for approximately Rs 3000 from a police officer in Assam while returning home. It still stands the weathering of time after surviving many storms"
     },
     {
         sl:2,
-        title:'Education',
+        title:'Education And Development',
         image:image2,
         type:"education",
         desc:"Major Abdul Ghani, born in Comilla in 1915, initially studied at a madrasah, excelling in both academics and sports. He later shifted to mainstream education under the guidance of Mr. Hamid Nomani, enrolling in Muslim High School, Chittagong. After passing his entrance exam from Khulna Zilla School at 21, Ghani attended Kolkata Islamia College, supported by Dr. Abdus Sobhan. He completed his Intermediate in Arts and enrolled in a BA program.<br>However, his studies faced challenges after Dr. Sobhan's death in 1939 and the outbreak of World War II. His educational path took a significant turn when Mr. Hamid Hasan Nomani, the Magistrate of Chittagong, recognized Ghani's potential and decided to support him. Following Nomani's advice, Ghani transferred from the madrasah to Muslim High School in Chittagong to receive a more formal education.<br>He later continued his studies at Khulna Zilla School, where he passed his entrance examination at the age of 21. Subsequently, Ghani was admitted to Kolkata Islamia College, where he was financially supported by Dr. Abdus Sobhan, his maternal uncle. At Islamia College, he completed his Intermediate in Arts and enrolled in a BA program. However, his academic pursuits faced challenges after Dr. Sobhan's untimely death in 1939 and the onset of World War II."
